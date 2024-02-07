@@ -35,21 +35,7 @@ Route::get('/', function() {
 Route::get('/pendataan', function() {
     return view ('pendataan');
 })-> name('pendataan');
-
-
-
-
-
 Route::get('/', [HitungController::class, 'hitung']);
-
-git
-
-
-
-
-
-
-
 Route::get('/daftar', [TestController::class, 'daftar']);
 Route::post('/kirim', [TestController::class, 'kirim']);
 
